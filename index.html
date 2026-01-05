@@ -1,10 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Email Confirmed</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Confirmed | Taleforge</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #A1CEDC, #1D3D47);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #1D3D47;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 40px 30px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      text-align: center;
+      max-width: 400px;
+      width: 90%;
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    h2 {
+      color: #1D3D47;
+      font-size: 28px;
+      margin-bottom: 16px;
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 24px;
+      color: #4B4B4B;
+    }
+
+    .btn {
+      background-color: #A1CEDC;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #7BB3C8;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
-  <h2>Your email is confirmed!</h2>
-  <p>You can return to the app and login.</p>
+  <div class="container">
+    <h2>Email Confirmed!</h2>
+    <p>Your Taleforge account is now verified. You can safely return to the app and login.</p>
+  </div>
 </body>
 </html>
